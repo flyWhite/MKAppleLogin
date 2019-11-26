@@ -16,6 +16,7 @@
 		CCDD13ED238D0F32000734CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDD13EC238D0F32000734CC /* main.m */; };
 		CCDD13F7238D0F32000734CC /* MKAppleLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDD13F6238D0F32000734CC /* MKAppleLoginTests.m */; };
 		CCDD1402238D0F32000734CC /* MKAppleLoginUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDD1401238D0F32000734CC /* MKAppleLoginUITests.m */; };
+		CCDD1413238D0F56000734CC /* MKAppleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDD1411238D0F56000734CC /* MKAppleLogin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		CCDD13FD238D0F32000734CC /* MKAppleLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKAppleLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDD1401238D0F32000734CC /* MKAppleLoginUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppleLoginUITests.m; sourceTree = "<group>"; };
 		CCDD1403238D0F32000734CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDD140F238D0F43000734CC /* MKAppleLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKAppleLogin.entitlements; sourceTree = "<group>"; };
+		CCDD1411238D0F56000734CC /* MKAppleLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAppleLogin.m; sourceTree = "<group>"; };
+		CCDD1412238D0F56000734CC /* MKAppleLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAppleLogin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 		CCDD13D9238D0F2D000734CC /* MKAppleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CCDD1410238D0F56000734CC /* AppleLogin */,
+				CCDD140F238D0F43000734CC /* MKAppleLogin.entitlements */,
 				CCDD13DA238D0F2D000734CC /* AppDelegate.h */,
 				CCDD13DB238D0F2D000734CC /* AppDelegate.m */,
 				CCDD13DD238D0F2D000734CC /* SceneDelegate.h */,
@@ -135,6 +141,15 @@
 				CCDD1403238D0F32000734CC /* Info.plist */,
 			);
 			path = MKAppleLoginUITests;
+			sourceTree = "<group>";
+		};
+		CCDD1410238D0F56000734CC /* AppleLogin */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD1412238D0F56000734CC /* MKAppleLogin.h */,
+				CCDD1411238D0F56000734CC /* MKAppleLogin.m */,
+			);
+			path = AppleLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDD1413238D0F56000734CC /* MKAppleLogin.m in Sources */,
 				CCDD13E2238D0F2D000734CC /* ViewController.m in Sources */,
 				CCDD13DC238D0F2D000734CC /* AppDelegate.m in Sources */,
 				CCDD13ED238D0F32000734CC /* main.m in Sources */,
@@ -439,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MKAppleLogin/MKAppleLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LKGXMSHC8X;
 				INFOPLIST_FILE = MKAppleLogin/Info.plist;
@@ -456,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MKAppleLogin/MKAppleLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LKGXMSHC8X;
 				INFOPLIST_FILE = MKAppleLogin/Info.plist;
